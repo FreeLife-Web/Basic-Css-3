@@ -3,52 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding</title>
+    <title>Box Model</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-         <h1 style="background-color: rgba(66, 66, 204, 0.849); color: rgb(168, 151, 151);">
-     My Coding Journey
-    </h1>
+        <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="header">
+        <div class="header-section">
+            <h1>Wisdom Ebube</h1>
+        <p class="text1"><em>Software Developer!</em></p>
+        <p class="text2"> Passionate about web development, coding, and building digital experiences.</p>
+      <div class="social-links">
+         <a href="https://www.linkedin.com/in/wisdom-ebube-a31672314/" target="_blank" class="btn">LinkedIn</a>
+         <a href="https://x.com/ebube_wisd67503" target="_blank" class="btn1">Twitter</a>
+      </div>
+        </div>
     </header>
 
-    <main>
-        <section>
-               <p style="color:rgb(62, 118, 99); font-family:'times new roman', serif">
-            I started my coding journey as a curious learner, trying to understand how websites are built.
-             At first, HTML looked confusing, but I kept practicing and slowly began to understand how everything works.
-        </p>
+    <section id="about-section">
 
-        <p style="color:rgb(70, 194, 152); font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
-            As I continued learning, I moved from simple tags to building real web pages. 
-            I’ve worked on small projects and assignments that helped me improve my front-end skills and gain confidence.
-        </p>
+        <div class="about-image">
+            <img src="./Assest/download (1).jpg" alt="Profile-picture">
+        </div>
+        <div class="about-text">
+           <h2>About Me!</h2>
+            <p>
+                I'm Wisdom Ebube, a young aspiring developer with a passion for technology and web development.
+              <br>  I'm currently learning front-end development while preparing to study Software Engineering at university.
+                I enjoy coding, solving problems, and continuously improving my skills, with the goal of becoming a professional software developer in the future. 🚀
+            </p>
+             <a href="#contact" class="btn3">Contact Me</a>
+        </div>
+    </section>
 
-        <p style="color:rgb(10, 41, 31); font-family:'Arial', sans-serif">
-            Now I’m focused on becoming a full-stack web developer. Even though school takes most of my time, 
-            I’m still committed to learning step by step until I reach my goal.
-        </p>
+    <section id="skills-section">
+        <h2>Skills</h2>
 
-          <hr>
+    <div class="skills-container">
+        <div class="skill-card">HTML <> <img id="skill-img" src="./Assest/html.jpg" alt="HTML Icon"> </div>
+        <div class="skill-card">CSS {} <img id="skill-img" src="./Assest/css.jpg" alt="CSS Icon"> </div>
+        <div class="skill-card">JavaScript <img id="skill-img" src="./Assest/javascrip.png" alt="JavaScript Icon"> </div>
+        <div class="skill-card">Git <img id="skill-img" src="./Assest/download.png" alt="Git Icon"></div>
+        <div class="skill-card">GitHub <img id="skill-img" src="./Assest/github.png" alt="GitHub Icon"></div>
+        <div class="skill-card">Responsive Design <img id="skill-img" src="./Assest/RWD.png" alt="Responsive Design Icon"></div>
+    </div>
+    </section>
 
-    <!-- Links related to each paragraph -->
-    <h2>Related Learning Links</h2>
+    <section id="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="/Assest/image_cropped (1).png" alt="Nft Card">
+                <h3>NFT Card</h3>
+                <p>virtual collectibles or wearable assets authenticated on the blockchain</p>
+                <button>View Project</button>
+            </div>
+            <div class="project-card">
+                <img src="/Assest/medconnect_cropped.png" alt="HealthCare Website">
+                <h3>HealthCare Website</h3>
+                <p>Streamline appointments, manage patient records, and track hospital analytics all in one powerful platform designed for modern healthcare.</p>
+                <button><a href="https://med-connect-academy.vercel.app/" target="_blank">View Project</a></button>
+            </div>
+            <div class="project-card">
+                <img src="/Assest/scoreboard_cropped.png" alt="ScoreBoard App">
+                <h3>ScoreBoard App</h3>
+                <p>Used to publicly display the score and current statistics of a game or match</p>
+                <button>View Project</button>
+            </div>
+        </div>
+    </section>
 
-    <p>
-        Beginner HTML Guide: 
-        <a href="https://www.w3schools.com/html/" target="_blank">Learn HTML Basics</a>
-    </p>
-
-    <p>
-        Practice Projects: 
-        <a href="https://www.freecodecamp.org/learn/" target="_blank">Build Real Projects</a>
-    </p>
-
-    <p>
-        Full-Stack Path: 
-        <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">Web Development Roadmap</a>
-    </p>
-        </section>
-        </main>
+    <section id="contact-section">
+        <h2 id="text">Contact Me</h2>
+        <p><em>If you have any questions or would like to get in touch, feel free to reach out!</em></p>
+        <a href="mailto: ebubewisdom2010@gmail.com " class="email-btn">Email Me!</a>
+        <p>OR</p>
+        <div class="social-links">
+        <h2 class="text4">Connect with Me</h2>
+                <div class="links">   
+            <a href="https://www.linkedin.com/in/wisdom-ebube-a31672314/" target="_blank" class="contact-btn">LinkedIn</a>|
+            <a href="https://x.com/ebube_wisd67503" target="_blank" class="contact-btn1">Twitter</a>
+                 </div> 
+        </div>
+    </section>
 </body>
 </html>
